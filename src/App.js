@@ -9,6 +9,7 @@ import Budget from './components/Budget';
 
 
 import { AppProvider } from './context/AppContext';
+import ExpenseTotal from './components/ExpenseTotal';
 const App = () => {
     return (
         <AppProvider>
@@ -32,6 +33,10 @@ const App = () => {
 
                         {
                             /* Add ExpenseTotal component here */
+                            //ExpenseTotal component
+                            <div className='col-sm'>
+                                <ExpenseTotal />
+                            </div>
                         }        
                        
                         {
