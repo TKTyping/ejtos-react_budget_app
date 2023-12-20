@@ -8,8 +8,11 @@ import Budget from './components/Budget';
 // Add code to import the other components here under
 import ExpenseTotal from './components/ExpenseTotal';
 import Remaining from './components/Remaining';
+import AllocationForm from './components/AllocationForm';
+import ExpenseItem from './components/ExpenseItem';
 
 import { AppProvider } from './context/AppContext';
+
 
 const App = () => {
     return (
@@ -42,14 +45,23 @@ const App = () => {
                        
                         {
                             /* Add ExpenseList component here */
+                            <div className='col-sm'>
+                                <ExpensList />
+                            </div>
                         }         
 
                         {
                             /* Add ExpenseItem component here */
+                            <div className='col-sm'>
+                                <ExpenseItem />
+                            </div>
                         }        
 
                         {
                             /* Add AllocationForm component here under */
+                            <div className='col-sm'>
+                                <AllocationForm />
+                            </div>
                         }        
 
                 </div>
